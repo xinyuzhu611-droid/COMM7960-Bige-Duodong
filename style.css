@@ -1,0 +1,60 @@
+        h2[align="center"]
+          {
+            color:tomato;
+          }
+        
+        h1{
+             color:chocolate;
+             font-size: 50px;
+          }
+
+        p,ul{
+            font-size:30px;
+          }
+
+        .bold_text{
+            color: goldenrod;
+          }
+
+        .image1:hover{
+            transform: scale(2);
+            opacity: 0.8;
+        }
+
+        .image2:hover{
+            border-radius: 30px;
+            transform: skew(50deg,-15deg);
+            filter: blur(3px);
+        }
+
+        .image3:hover{
+            filter: grayscale(50%);
+            transform: rotate(30deg);
+        }
+        
+        @keyframes move_image{
+            0%{transform: translate(30px,30px);}
+            25%{transform:translate(60px,60px);}
+            75%{transform: translate(90px,90px);}
+            100%{transform:translate(120px,120px);}
+        }
+
+        .image4_animation:hover
+        {
+            animation-name: move_image;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotation{
+            0%{transform: rotate(45deg);}
+            25%{transform: rotate(90deg);}
+            50%{transform: rotate(135deg);}
+            100%{transform:rotate(180deg);}
+        }
+
+        .h1_animation:hover
+        {
+            animation-name: rotation;
+            animation-duration: 3s;
+        }
